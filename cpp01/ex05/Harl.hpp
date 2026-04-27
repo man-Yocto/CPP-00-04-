@@ -4,13 +4,19 @@
 #include <iostream>
 #include <string>
 
+class Harl;
+
+struct Command {
+    std::string name;
+    void (Harl::*func)();
+};
+
 class Harl {
 private:
     void debug(void);
     void info(void);
     void warning(void);
     void error(void);
-    unsigned int hashLevel(std::string level);
 
 public:
     void complain(std::string level);
