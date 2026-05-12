@@ -48,7 +48,7 @@ std::string replace_at(const std::string& src, size_t pos, size_t len, const std
     return result;
 }
 
-bool write(const char* filename, const std::string& content, const std::string& s1, const std::string& s2)
+bool write(const char* filename, const std::string& content, const std::string& s1, const std::string& s2)  
 {
     std::ofstream file(filename);
     if(file.is_open())
